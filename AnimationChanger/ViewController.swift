@@ -1,19 +1,23 @@
-//
-//  ViewController.swift
-//  AnimationChanger
-//
-//  Created by Viktor Teslenko on 20.04.2023.
-//
-
-import UIKit
+import Spring
 
 class ViewController: UIViewController {
 
+    @IBOutlet var springView: SpringView!
+    @IBOutlet var animationNameLabel: UILabel!
+    @IBOutlet var forceLabel: UILabel!
+    @IBOutlet var daturationLabel: UILabel!
+    @IBOutlet var delayLabel: UILabel!
+    @IBOutlet var nextButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        nextButton.titleLabel?.text = "Try Animation"
     }
 
-
+    
+    @IBAction func nextAnimationButtonPressed(_ sender: SpringButton) {
+        
+    }
+    
 }
 

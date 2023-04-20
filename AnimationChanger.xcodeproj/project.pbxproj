@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7664B8547073107E5D55C74 /* Pods_AnimationChanger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE6CBED981CEAF5BF7FDB5F /* Pods_AnimationChanger.framework */; };
 		CA790E6F29F1710700F41E4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA790E6E29F1710700F41E4B /* AppDelegate.swift */; };
 		CA790E7129F1710700F41E4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA790E7029F1710700F41E4B /* SceneDelegate.swift */; };
 		CA790E7329F1710700F41E4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA790E7229F1710700F41E4B /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CE6CBED981CEAF5BF7FDB5F /* Pods_AnimationChanger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationChanger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5245AB2D01EAABB1F134A468 /* Pods-AnimationChanger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationChanger.release.xcconfig"; path = "Target Support Files/Pods-AnimationChanger/Pods-AnimationChanger.release.xcconfig"; sourceTree = "<group>"; };
+		94E69AF74A6172C9A705BFE9 /* Pods-AnimationChanger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationChanger.debug.xcconfig"; path = "Target Support Files/Pods-AnimationChanger/Pods-AnimationChanger.debug.xcconfig"; sourceTree = "<group>"; };
 		CA790E6B29F1710700F41E4B /* AnimationChanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationChanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA790E6E29F1710700F41E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA790E7029F1710700F41E4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7664B8547073107E5D55C74 /* Pods_AnimationChanger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CA6D6328B8CC59F12A6DC7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94E69AF74A6172C9A705BFE9 /* Pods-AnimationChanger.debug.xcconfig */,
+				5245AB2D01EAABB1F134A468 /* Pods-AnimationChanger.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		80BBB8D65C8273FAFAE98069 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CE6CBED981CEAF5BF7FDB5F /* Pods_AnimationChanger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CA790E6229F1710700F41E4B = {
 			isa = PBXGroup;
 			children = (
 				CA790E6D29F1710700F41E4B /* AnimationChanger */,
 				CA790E6C29F1710700F41E4B /* Products */,
+				3CA6D6328B8CC59F12A6DC7B /* Pods */,
+				80BBB8D65C8273FAFAE98069 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA790E7F29F1710800F41E4B /* Build configuration list for PBXNativeTarget "AnimationChanger" */;
 			buildPhases = (
+				E55E6475E701C06638A1F256 /* [CP] Check Pods Manifest.lock */,
 				CA790E6729F1710700F41E4B /* Sources */,
 				CA790E6829F1710700F41E4B /* Frameworks */,
 				CA790E6929F1710700F41E4B /* Resources */,
+				A5F07517DCD5FBB710FAAF37 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5F07517DCD5FBB710FAAF37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimationChanger/Pods-AnimationChanger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimationChanger/Pods-AnimationChanger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimationChanger/Pods-AnimationChanger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E55E6475E701C06638A1F256 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimationChanger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CA790E6729F1710700F41E4B /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		CA790E8029F1710800F41E4B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94E69AF74A6172C9A705BFE9 /* Pods-AnimationChanger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +365,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +381,7 @@
 		};
 		CA790E8129F1710800F41E4B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5245AB2D01EAABB1F134A468 /* Pods-AnimationChanger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +395,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
