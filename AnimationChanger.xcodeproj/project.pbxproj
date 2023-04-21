@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A7664B8547073107E5D55C74 /* Pods_AnimationChanger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE6CBED981CEAF5BF7FDB5F /* Pods_AnimationChanger.framework */; };
+		CA1392B929F27A4D0011F734 /* Extension + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1392B829F27A4D0011F734 /* Extension + UIButton.swift */; };
 		CA790E6F29F1710700F41E4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA790E6E29F1710700F41E4B /* AppDelegate.swift */; };
 		CA790E7129F1710700F41E4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA790E7029F1710700F41E4B /* SceneDelegate.swift */; };
 		CA790E7329F1710700F41E4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA790E7229F1710700F41E4B /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 		3CE6CBED981CEAF5BF7FDB5F /* Pods_AnimationChanger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationChanger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5245AB2D01EAABB1F134A468 /* Pods-AnimationChanger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationChanger.release.xcconfig"; path = "Target Support Files/Pods-AnimationChanger/Pods-AnimationChanger.release.xcconfig"; sourceTree = "<group>"; };
 		94E69AF74A6172C9A705BFE9 /* Pods-AnimationChanger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationChanger.debug.xcconfig"; path = "Target Support Files/Pods-AnimationChanger/Pods-AnimationChanger.debug.xcconfig"; sourceTree = "<group>"; };
+		CA1392B829F27A4D0011F734 /* Extension + UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIButton.swift"; sourceTree = "<group>"; };
 		CA790E6B29F1710700F41E4B /* AnimationChanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationChanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA790E6E29F1710700F41E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA790E7029F1710700F41E4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +50,6 @@
 				94E69AF74A6172C9A705BFE9 /* Pods-AnimationChanger.debug.xcconfig */,
 				5245AB2D01EAABB1F134A468 /* Pods-AnimationChanger.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -58,6 +59,42 @@
 				3CE6CBED981CEAF5BF7FDB5F /* Pods_AnimationChanger.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA43248129F2428A002E2168 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA790E6E29F1710700F41E4B /* AppDelegate.swift */,
+				CA790E7029F1710700F41E4B /* SceneDelegate.swift */,
+				CA790E7C29F1710800F41E4B /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		CA43248229F242BA002E2168 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA790E7229F1710700F41E4B /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CA43248329F242CA002E2168 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA790E7729F1710800F41E4B /* Assets.xcassets */,
+				CA1392B829F27A4D0011F734 /* Extension + UIButton.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CA43248429F242D2002E2168 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CA790E7429F1710700F41E4B /* Main.storyboard */,
+				CA790E7929F1710800F41E4B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		CA790E6229F1710700F41E4B = {
@@ -81,13 +118,10 @@
 		CA790E6D29F1710700F41E4B /* AnimationChanger */ = {
 			isa = PBXGroup;
 			children = (
-				CA790E6E29F1710700F41E4B /* AppDelegate.swift */,
-				CA790E7029F1710700F41E4B /* SceneDelegate.swift */,
-				CA790E7229F1710700F41E4B /* ViewController.swift */,
-				CA790E7429F1710700F41E4B /* Main.storyboard */,
-				CA790E7729F1710800F41E4B /* Assets.xcassets */,
-				CA790E7929F1710800F41E4B /* LaunchScreen.storyboard */,
-				CA790E7C29F1710800F41E4B /* Info.plist */,
+				CA43248129F2428A002E2168 /* Support Files */,
+				CA43248229F242BA002E2168 /* View Controllers */,
+				CA43248429F242D2002E2168 /* Storyboards */,
+				CA43248329F242CA002E2168 /* Models */,
 			);
 			path = AnimationChanger;
 			sourceTree = "<group>";
@@ -210,6 +244,7 @@
 				CA790E7329F1710700F41E4B /* ViewController.swift in Sources */,
 				CA790E6F29F1710700F41E4B /* AppDelegate.swift in Sources */,
 				CA790E7129F1710700F41E4B /* SceneDelegate.swift in Sources */,
+				CA1392B929F27A4D0011F734 /* Extension + UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +394,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZW9W8KTK4N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimationChanger/Info.plist;
+				INFOPLIST_FILE = "AnimationChanger/Support Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -389,7 +424,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZW9W8KTK4N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimationChanger/Info.plist;
+				INFOPLIST_FILE = "AnimationChanger/Support Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

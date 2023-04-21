@@ -51,14 +51,14 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="daturation:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kU-fP-ocG">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="daturation:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kU-fP-ocG" userLabel="Duration Label">
                                                 <rect key="frame" x="0.0" y="20.333333333333314" width="82.666666666666671" height="20.333333333333329"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="delay:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hr-3M-qYY">
-                                                <rect key="frame" x="0.0" y="40.666666666666686" width="45.333333333333336" height="20.333333333333329"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="curve:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hr-3M-qYY" userLabel="Curve Label">
+                                                <rect key="frame" x="0.0" y="40.666666666666686" width="47.333333333333336" height="20.333333333333329"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -93,8 +93,8 @@
                     </view>
                     <connections>
                         <outlet property="animationNameLabel" destination="Tr2-oU-VXO" id="aT8-Jq-24c"/>
-                        <outlet property="daturationLabel" destination="2kU-fP-ocG" id="Qs1-mA-cQN"/>
-                        <outlet property="delayLabel" destination="9Hr-3M-qYY" id="0sm-wm-2zk"/>
+                        <outlet property="curveLabel" destination="9Hr-3M-qYY" id="X2L-av-vr7"/>
+                        <outlet property="durationLabel" destination="2kU-fP-ocG" id="88j-NL-wTa"/>
                         <outlet property="forceLabel" destination="Bvc-dZ-nxt" id="lYk-Xd-990"/>
                         <outlet property="nextButton" destination="p3u-Od-liq" id="wCC-fq-TQZ"/>
                         <outlet property="springView" destination="AlM-aQ-IeR" id="RLT-qI-4NA"/>
