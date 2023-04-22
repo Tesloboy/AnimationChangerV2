@@ -15,6 +15,8 @@
 		CA790E7629F1710700F41E4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA790E7429F1710700F41E4B /* Main.storyboard */; };
 		CA790E7829F1710800F41E4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA790E7729F1710800F41E4B /* Assets.xcassets */; };
 		CA790E7B29F1710800F41E4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA790E7929F1710800F41E4B /* LaunchScreen.storyboard */; };
+		CA943D0529F3E33E0083A351 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA943D0429F3E33E0083A351 /* DataManager.swift */; };
+		CA943D0729F3E8590083A351 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA943D0629F3E8590083A351 /* Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +24,7 @@
 		5245AB2D01EAABB1F134A468 /* Pods-AnimationChanger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationChanger.release.xcconfig"; path = "Target Support Files/Pods-AnimationChanger/Pods-AnimationChanger.release.xcconfig"; sourceTree = "<group>"; };
 		94E69AF74A6172C9A705BFE9 /* Pods-AnimationChanger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationChanger.debug.xcconfig"; path = "Target Support Files/Pods-AnimationChanger/Pods-AnimationChanger.debug.xcconfig"; sourceTree = "<group>"; };
 		CA1392B829F27A4D0011F734 /* Extension + UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIButton.swift"; sourceTree = "<group>"; };
-		CA790E6B29F1710700F41E4B /* AnimationChanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationChanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA790E6B29F1710700F41E4B /* AnimationChangerV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationChangerV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA790E6E29F1710700F41E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA790E7029F1710700F41E4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CA790E7229F1710700F41E4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		CA790E7729F1710800F41E4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA790E7A29F1710800F41E4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA790E7C29F1710800F41E4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA943D0429F3E33E0083A351 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		CA943D0629F3E8590083A351 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				CA790E7729F1710800F41E4B /* Assets.xcassets */,
+				CA943D0429F3E33E0083A351 /* DataManager.swift */,
+				CA943D0629F3E8590083A351 /* Animation.swift */,
 				CA1392B829F27A4D0011F734 /* Extension + UIButton.swift */,
 			);
 			path = Models;
@@ -110,7 +116,7 @@
 		CA790E6C29F1710700F41E4B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CA790E6B29F1710700F41E4B /* AnimationChanger.app */,
+				CA790E6B29F1710700F41E4B /* AnimationChangerV2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,9 +135,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CA790E6A29F1710700F41E4B /* AnimationChanger */ = {
+		CA790E6A29F1710700F41E4B /* AnimationChangerV2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA790E7F29F1710800F41E4B /* Build configuration list for PBXNativeTarget "AnimationChanger" */;
+			buildConfigurationList = CA790E7F29F1710800F41E4B /* Build configuration list for PBXNativeTarget "AnimationChangerV2" */;
 			buildPhases = (
 				E55E6475E701C06638A1F256 /* [CP] Check Pods Manifest.lock */,
 				CA790E6729F1710700F41E4B /* Sources */,
@@ -143,9 +149,9 @@
 			);
 			dependencies = (
 			);
-			name = AnimationChanger;
+			name = AnimationChangerV2;
 			productName = AnimationChanger;
-			productReference = CA790E6B29F1710700F41E4B /* AnimationChanger.app */;
+			productReference = CA790E6B29F1710700F41E4B /* AnimationChangerV2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +169,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CA790E6629F1710700F41E4B /* Build configuration list for PBXProject "AnimationChanger" */;
+			buildConfigurationList = CA790E6629F1710700F41E4B /* Build configuration list for PBXProject "AnimationChangerV2" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -176,7 +182,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA790E6A29F1710700F41E4B /* AnimationChanger */,
+				CA790E6A29F1710700F41E4B /* AnimationChangerV2 */,
 			);
 		};
 /* End PBXProject section */
@@ -242,8 +248,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA790E7329F1710700F41E4B /* ViewController.swift in Sources */,
+				CA943D0529F3E33E0083A351 /* DataManager.swift in Sources */,
 				CA790E6F29F1710700F41E4B /* AppDelegate.swift in Sources */,
 				CA790E7129F1710700F41E4B /* SceneDelegate.swift in Sources */,
+				CA943D0729F3E8590083A351 /* Animation.swift in Sources */,
 				CA1392B929F27A4D0011F734 /* Extension + UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,7 +455,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CA790E6629F1710700F41E4B /* Build configuration list for PBXProject "AnimationChanger" */ = {
+		CA790E6629F1710700F41E4B /* Build configuration list for PBXProject "AnimationChangerV2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA790E7D29F1710800F41E4B /* Debug */,
@@ -456,7 +464,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA790E7F29F1710800F41E4B /* Build configuration list for PBXNativeTarget "AnimationChanger" */ = {
+		CA790E7F29F1710800F41E4B /* Build configuration list for PBXNativeTarget "AnimationChangerV2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CA790E8029F1710800F41E4B /* Debug */,
